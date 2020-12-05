@@ -1,0 +1,25 @@
+package com.dkdus.dementia.model.place_material
+data class Items (
+    var cnterNm:String,
+    var cnterSe:String,
+    var rdnmadr :String,
+    var lnmadr:String,
+    var latitude:Long,
+    var longitude:Long,
+    var fondYm : String,
+    var bildngAr : Int,
+    var etcFclty : String,
+    var doctrCo : Int,
+    var nurseCo: Int,
+    var scrcsCo : Int,
+    var etcHnfSttus : String,
+    var operInstitutionNm : String,
+    var rprsntvNm : String,
+    var operPhoneNumber : String,
+    var operCnsgnDate: String,
+    var imbcltyIntrcn : String,
+    var phoneNumber : String,
+    var institutionNm : String,
+    var referenceDate : String,
+    var insttCode :String
+    )
