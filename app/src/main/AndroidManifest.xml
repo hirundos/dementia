@@ -19,16 +19,6 @@
         <meta-data
             android:name="com.google.android.wearable.standalone"
             android:value="true" />
-
-        <activity
-            android:name=".ui.game.GuguActivity"
-            android:label="@string/title_activity_gugu">
-        </activity>
-        <activity
-            android:name=".ui.game.RcpActivity"
-            android:label="@string/title_activity_main">
-        </activity>
-
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyAWoj4XNYR6fEwNBID5CPxJHoALT93gWyU" />
@@ -49,6 +39,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity
+            android:name=".ui.game.GuguActivity"
+            android:label="@string/title_activity_gugu">
+        </activity>
+        <activity
+            android:name=".ui.game.RcpActivity"
+            android:label="@string/title_activity_main">
+        </activity>
+
     </application>
 
 </manifest>

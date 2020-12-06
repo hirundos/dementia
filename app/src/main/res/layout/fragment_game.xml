@@ -23,7 +23,6 @@
             android:layout_marginLeft="30dp"
             android:layout_marginRight="20dp"
             android:text="가위바위보"
-            android:onClick="onClick"
             android:textSize="30sp"
             app:layout_constraintEnd_toStartOf="@+id/button2" />
 
@@ -33,7 +32,6 @@
             android:layout_height="wrap_content"
             android:layout_marginEnd="32dp"
             android:text="구구단"
-            android:onClick="onClick"
             android:textSize="30sp" />
     </LinearLayout>
 
