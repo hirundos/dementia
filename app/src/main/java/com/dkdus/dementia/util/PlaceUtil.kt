@@ -9,7 +9,7 @@ class PlaceUtil {
     init {
         var retrofit: Retrofit = Retrofit.Builder()
             .baseUrl("http://api.data.go.kr/openapi/")
-            .addConverterFactory(ScalarsConverterFactory.create())
+            .addConverterFactory(GsonConverterFactory.create())
             .build()
         placeAPI  = retrofit.create(PlaceAPI::class.java)
     }

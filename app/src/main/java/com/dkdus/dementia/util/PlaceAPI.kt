@@ -11,7 +11,7 @@ interface PlaceAPI {
     fun getPlace(
         @Query("numOfRows") numOfRows: String?,
         @Query("type") type: String?
-    ): Call<String>
+    ): Call<Place>
 
 
 }
