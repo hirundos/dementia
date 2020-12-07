@@ -1,14 +1,321 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".CheckFragment">
+    android:layout_height="match_parent">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
+
+    <ScrollView
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_width="match_parent"
+        android:id="@+id/ScrollView1">
 
-</FrameLayout>
+
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical">
+
+    <Button
+        android:layout_height="100dp"
+        android:layout_width="match_parent"
+        android:id="@+id/button1"
+        android:textSize="30dp"
+        android:text="체크문항 1번."/>
+
+    <CheckBox
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/check1"
+        android:text="Check"
+        android:layout_gravity="right"/>
+
+    <Button
+        android:layout_height="100dp"
+        android:layout_width="match_parent"
+        android:id="@+id/button2"
+        android:textSize="30dp"
+        android:text="체크문항 2번."/>
+
+    <CheckBox
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/check2"
+        android:text="Check"
+        android:layout_gravity="right"/>
+
+    <Button
+        android:layout_height="100dp"
+        android:layout_width="match_parent"
+        android:id="@+id/button3"
+        android:textSize="30dp"
+        android:text="체크문항 3번."/>
+
+    <CheckBox
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/check3"
+        android:text="Check"
+        android:layout_gravity="right"/>
+
+    <Button
+        android:layout_height="100dp"
+        android:layout_width="match_parent"
+        android:id="@+id/button4"
+        android:textSize="30dp"
+        android:text="체크문항 4번."/>
+
+    <CheckBox
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/check4"
+        android:text="Check"
+        android:layout_gravity="right"/>
+
+    <Button
+        android:layout_height="100dp"
+        android:layout_width="match_parent"
+        android:id="@+id/button5"
+        android:textSize="30dp"
+        android:text="체크문항 5번."/>
+
+    <CheckBox
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/check5"
+        android:text="Check"
+        android:layout_gravity="right"/>
+
+    <Button
+        android:layout_height="100dp"
+        android:layout_width="match_parent"
+        android:id="@+id/button6"
+        android:textSize="30dp"
+        android:text="체크문항 6번."/>
+
+    <CheckBox
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/check6"
+        android:text="Check"
+        android:layout_gravity="right"/>
+
+    <Button
+        android:layout_height="100dp"
+        android:layout_width="match_parent"
+        android:id="@+id/button7"
+        android:textSize="30dp"
+        android:text="체크문항 7번."/>
+
+    <CheckBox
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/check7"
+        android:text="Check"
+        android:layout_gravity="right"/>
+
+    <Button
+        android:layout_height="100dp"
+        android:layout_width="match_parent"
+        android:id="@+id/button8"
+        android:textSize="30dp"
+        android:text="체크문항 8번."/>
+
+    <CheckBox
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/check8"
+        android:text="Check"
+        android:layout_gravity="right"/>
+
+    <Button
+        android:layout_height="100dp"
+        android:layout_width="match_parent"
+        android:id="@+id/button9"
+        android:textSize="30dp"
+        android:text="체크문항 9번."/>
+
+    <CheckBox
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/check9"
+        android:text="Check"
+        android:layout_gravity="right"/>
+
+    <Button
+        android:layout_height="100dp"
+        android:layout_width="match_parent"
+        android:id="@+id/button10"
+        android:textSize="30dp"
+        android:text="체크문항 10번."/>
+
+    <CheckBox
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/check10"
+        android:text="Check"
+        android:layout_gravity="right"/>
+
+    <Button
+        android:layout_height="100dp"
+        android:layout_width="match_parent"
+        android:id="@+id/button11"
+        android:textSize="30dp"
+        android:text="체크문항 11번."/>
+
+    <CheckBox
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/check11"
+        android:text="Check"
+        android:layout_gravity="right"/>
+
+    <Button
+        android:layout_height="100dp"
+        android:layout_width="match_parent"
+        android:id="@+id/button12"
+        android:textSize="30dp"
+        android:text="체크문항 12번."/>
+
+    <CheckBox
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/check12"
+        android:text="Check"
+        android:layout_gravity="right"/>
+
+    <Button
+        android:layout_height="100dp"
+        android:layout_width="match_parent"
+        android:id="@+id/button13"
+        android:textSize="30dp"
+        android:text="체크문항 13번."/>
+
+    <CheckBox
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/check13"
+        android:text="Check"
+        android:layout_gravity="right"/>
+
+    <Button
+        android:layout_height="100dp"
+        android:layout_width="match_parent"
+        android:id="@+id/button14"
+        android:textSize="30dp"
+        android:text="체크문항 14번."/>
+
+    <CheckBox
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/check14"
+        android:text="Check"
+        android:layout_gravity="right"/>
+
+    <Button
+        android:layout_height="100dp"
+        android:layout_width="match_parent"
+        android:id="@+id/button15"
+        android:textSize="30dp"
+        android:text="체크문항 15번."/>
+
+    <CheckBox
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/check15"
+        android:text="Check"
+        android:layout_gravity="right"/>
+
+    <Button
+        android:layout_height="100dp"
+        android:layout_width="match_parent"
+        android:id="@+id/button16"
+        android:textSize="30dp"
+        android:text="체크문항 16번."/>
+
+    <CheckBox
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/check16"
+        android:text="Check"
+        android:layout_gravity="right"/>
+
+    <Button
+        android:layout_height="100dp"
+        android:layout_width="match_parent"
+        android:id="@+id/button17"
+        android:textSize="30dp"
+        android:text="체크문항 17번."/>
+
+    <CheckBox
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/check17"
+        android:text="Check"
+        android:layout_gravity="right"/>
+
+    <Button
+        android:layout_height="100dp"
+        android:layout_width="match_parent"
+        android:id="@+id/button18"
+        android:textSize="30dp"
+        android:text="체크문항 18번."/>
+
+    <CheckBox
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/check18"
+        android:text="Check"
+        android:layout_gravity="right"/>
+
+    <Button
+        android:layout_height="100dp"
+        android:layout_width="match_parent"
+        android:id="@+id/button19"
+        android:textSize="30dp"
+        android:text="체크문항 19번."/>
+
+    <CheckBox
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/check19"
+        android:text="Check"
+        android:layout_gravity="right"/>
+
+    <Button
+        android:layout_height="100dp"
+        android:layout_width="match_parent"
+        android:id="@+id/button20"
+        android:textSize="30dp"
+        android:text="체크문항 20번."/>
+
+    <CheckBox
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/check20"
+        android:text="Check"
+        android:layout_gravity="right"/>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/tv1"
+        android:textSize="30dp"
+        android:text="결과"/>
+
+    <Button
+        android:layout_height="100dp"
+        android:layout_width="match_parent"
+        android:id="@+id/masterbutton"
+        android:textSize="30dp"
+        android:text="결과확인"/>
+
+</LinearLayout>
+</ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
