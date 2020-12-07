@@ -3,11 +3,13 @@ package com.dkdus.dementia.ui.home
 import android.Manifest
 import android.content.pm.PackageManager
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.core.app.ActivityCompat
 import androidx.fragment.app.Fragment
+import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import com.dkdus.dementia.R
 import com.google.android.gms.maps.CameraUpdateFactory
@@ -16,13 +18,14 @@ import com.google.android.gms.maps.OnMapReadyCallback
 import com.google.android.gms.maps.SupportMapFragment
 import com.google.android.gms.maps.model.LatLng
 import com.google.android.gms.maps.model.MarkerOptions
+import org.w3c.dom.Node
 
 
 class HomeFragment : Fragment(), OnMapReadyCallback {
 
-    val CITY_HALL = LatLng(37.5662952, 126.97794509999994)
     lateinit var viewModel: HomeViewModel
     private lateinit var mMap: GoogleMap
+    var data: MutableList<Node> = arrayListOf()
 
     override fun onCreateView(
             inflater: LayoutInflater,
@@ -48,15 +51,28 @@ class HomeFragment : Fragment(), OnMapReadyCallback {
     }
 
     private fun placeCall(){
-        viewModel.callPlace()
-    }
-
+        viewModel.callPlace().observe(viewLifecycleOwner, Observer {
+            Log.d("사이즈가 얼마인가!!여기다",it.size.toString())
+            val it2 = it.iterator()
+            while(it2.hasNext()){
+                Log.d("D~~~","count")
+                var lat = it2.next().attributes.getNamedItem("latitude").textContent.toDouble()
+                var lot = it2.next().attributes.getNamedItem("longitude").textContent.toDouble()
+                mMap.addMarker(
+                    MarkerOptions()
+                        .position(LatLng(lat,lot))
+                )
+            }})
+        }
 
     override fun onMapReady(p0: GoogleMap) {
         mMap = p0
         val marker = LatLng(35.241615, 128.695587)
         mMap.addMarker(MarkerOptions().position(marker).title("Marker LAB"))
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(marker))
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(marker,7f))
+
+
+
     }
 
 

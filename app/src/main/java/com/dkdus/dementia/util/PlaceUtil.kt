@@ -1,7 +1,8 @@
 package com.dkdus.dementia.util
 
+import okhttp3.OkHttpClient
 import retrofit2.Retrofit
-import retrofit2.converter.gson.GsonConverterFactory
+import retrofit2.converter.jaxb.JaxbConverterFactory
 import retrofit2.converter.scalars.ScalarsConverterFactory
 
 class PlaceUtil {
@@ -9,7 +10,7 @@ class PlaceUtil {
     init {
         var retrofit: Retrofit = Retrofit.Builder()
             .baseUrl("http://api.data.go.kr/openapi/")
-            .addConverterFactory(GsonConverterFactory.create())
+            .addConverterFactory(ScalarsConverterFactory.create())
             .build()
         placeAPI  = retrofit.create(PlaceAPI::class.java)
     }

@@ -1,6 +1,6 @@
 package com.dkdus.dementia.util
 
-import com.dkdus.dementia.model.Place
+import com.dkdus.dementia.model.Responses
 import retrofit2.Call
 import retrofit2.http.GET
 import retrofit2.http.Query
@@ -11,7 +11,7 @@ interface PlaceAPI {
     fun getPlace(
         @Query("numOfRows") numOfRows: String?,
         @Query("type") type: String?
-    ): Call<Place>
+    ): Call<String>
 
 
 }
