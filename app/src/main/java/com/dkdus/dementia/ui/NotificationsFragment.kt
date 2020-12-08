@@ -1,4 +1,4 @@
-package com.dkdus.dementia.ui.notifications
+package com.dkdus.dementia.ui
 
 import android.os.Bundle
 import android.view.LayoutInflater

@@ -8,7 +8,6 @@ import androidx.fragment.app.FragmentTransaction
 import com.dkdus.dementia.R
 import com.dkdus.dementia.ui.game.GameFragment
 import com.dkdus.dementia.ui.home.HomeFragment
-import com.dkdus.dementia.ui.notifications.NotificationsFragment
 import kotlinx.android.synthetic.main.activity_home.*
 
 class HomeActivity : AppCompatActivity(), BottomNavigationView.OnNavigationItemSelectedListener {
@@ -45,7 +44,8 @@ class HomeActivity : AppCompatActivity(), BottomNavigationView.OnNavigationItemS
                 transaction.replace(R.id.fragment, gameFragment)
             }
             R.id.navigation_notify ->{
-                val notificationFragment = NotificationsFragment()
+                val notificationFragment =
+                    NotificationsFragment()
                 transaction.replace(R.id.fragment,notificationFragment)
             }
         }
