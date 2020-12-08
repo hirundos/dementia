@@ -13,6 +13,7 @@
         android:label="@string/title_activity_home"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
+        android:usesCleartextTraffic="true"
         android:theme="@style/Theme.Dementia">
         <activity android:name=".ui.DetailActivity"></activity>
 

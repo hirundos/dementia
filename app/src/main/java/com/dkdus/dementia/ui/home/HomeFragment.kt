@@ -99,6 +99,8 @@ class HomeFragment : Fragment(), OnMapReadyCallback, GoogleMap.OnMarkerClickList
                     it, XPathConstants.NODESET
             ) as NodeList?
 
+            Log.d("수렴","receive")
+
             for(i in 0..lat?.length!!-1){
 
             mMap.addMarker(
@@ -106,7 +108,6 @@ class HomeFragment : Fragment(), OnMapReadyCallback, GoogleMap.OnMarkerClickList
                     .title(cntername!!.item(i).textContent)
                         .zIndex(i.toFloat())
             )}
-
         })
     }
 
