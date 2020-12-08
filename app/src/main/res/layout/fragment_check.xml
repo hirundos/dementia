@@ -310,7 +310,8 @@
         android:layout_width="match_parent"
         android:id="@+id/masterbutton"
         android:textSize="30dp"
-        android:text="결과확인"/>
+        android:text="결과확인"
+        android:layout_marginBottom="50dp"/>
 
 </LinearLayout>
 </ScrollView>
