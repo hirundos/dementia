@@ -22,8 +22,8 @@
         android:layout_height="100dp"
         android:layout_width="match_parent"
         android:id="@+id/button1"
-        android:textSize="30dp"
-        android:text="체크문항 1번."/>
+        android:textSize="20sp"
+        android:text="@string/check1"/>
 
     <CheckBox
         android:layout_height="wrap_content"
@@ -36,8 +36,8 @@
         android:layout_height="100dp"
         android:layout_width="match_parent"
         android:id="@+id/button2"
-        android:textSize="30dp"
-        android:text="체크문항 2번."/>
+        android:textSize="20sp"
+        android:text="@string/check2"/>
 
     <CheckBox
         android:layout_height="wrap_content"
@@ -50,8 +50,8 @@
         android:layout_height="100dp"
         android:layout_width="match_parent"
         android:id="@+id/button3"
-        android:textSize="30dp"
-        android:text="체크문항 3번."/>
+        android:textSize="20sp"
+        android:text="@string/check3"/>
 
     <CheckBox
         android:layout_height="wrap_content"
@@ -64,8 +64,8 @@
         android:layout_height="100dp"
         android:layout_width="match_parent"
         android:id="@+id/button4"
-        android:textSize="30dp"
-        android:text="체크문항 4번."/>
+        android:textSize="20sp"
+        android:text="@string/check4"/>
 
     <CheckBox
         android:layout_height="wrap_content"
@@ -78,8 +78,8 @@
         android:layout_height="100dp"
         android:layout_width="match_parent"
         android:id="@+id/button5"
-        android:textSize="30dp"
-        android:text="체크문항 5번."/>
+        android:textSize="20sp"
+        android:text="@string/check5"/>
 
     <CheckBox
         android:layout_height="wrap_content"
@@ -92,8 +92,8 @@
         android:layout_height="100dp"
         android:layout_width="match_parent"
         android:id="@+id/button6"
-        android:textSize="30dp"
-        android:text="체크문항 6번."/>
+        android:textSize="20sp"
+        android:text="@string/check6"/>
 
     <CheckBox
         android:layout_height="wrap_content"
@@ -106,8 +106,8 @@
         android:layout_height="100dp"
         android:layout_width="match_parent"
         android:id="@+id/button7"
-        android:textSize="30dp"
-        android:text="체크문항 7번."/>
+        android:textSize="20sp"
+        android:text="@string/check7"/>
 
     <CheckBox
         android:layout_height="wrap_content"
@@ -120,8 +120,8 @@
         android:layout_height="100dp"
         android:layout_width="match_parent"
         android:id="@+id/button8"
-        android:textSize="30dp"
-        android:text="체크문항 8번."/>
+        android:textSize="20sp"
+        android:text="@string/check8"/>
 
     <CheckBox
         android:layout_height="wrap_content"
@@ -134,8 +134,8 @@
         android:layout_height="100dp"
         android:layout_width="match_parent"
         android:id="@+id/button9"
-        android:textSize="30dp"
-        android:text="체크문항 9번."/>
+        android:textSize="20sp"
+        android:text="@string/check9"/>
 
     <CheckBox
         android:layout_height="wrap_content"
@@ -148,8 +148,8 @@
         android:layout_height="100dp"
         android:layout_width="match_parent"
         android:id="@+id/button10"
-        android:textSize="30dp"
-        android:text="체크문항 10번."/>
+        android:textSize="20sp"
+        android:text="@string/check10"/>
 
     <CheckBox
         android:layout_height="wrap_content"
@@ -162,8 +162,8 @@
         android:layout_height="100dp"
         android:layout_width="match_parent"
         android:id="@+id/button11"
-        android:textSize="30dp"
-        android:text="체크문항 11번."/>
+        android:textSize="20sp"
+        android:text="@string/check11"/>
 
     <CheckBox
         android:layout_height="wrap_content"
@@ -176,8 +176,8 @@
         android:layout_height="100dp"
         android:layout_width="match_parent"
         android:id="@+id/button12"
-        android:textSize="30dp"
-        android:text="체크문항 12번."/>
+        android:textSize="20sp"
+        android:text="@string/check12"/>
 
     <CheckBox
         android:layout_height="wrap_content"
@@ -190,8 +190,8 @@
         android:layout_height="100dp"
         android:layout_width="match_parent"
         android:id="@+id/button13"
-        android:textSize="30dp"
-        android:text="체크문항 13번."/>
+        android:textSize="20sp"
+        android:text="@string/check13"/>
 
     <CheckBox
         android:layout_height="wrap_content"
@@ -204,8 +204,8 @@
         android:layout_height="100dp"
         android:layout_width="match_parent"
         android:id="@+id/button14"
-        android:textSize="30dp"
-        android:text="체크문항 14번."/>
+        android:textSize="20sp"
+        android:text="@string/check14"/>
 
     <CheckBox
         android:layout_height="wrap_content"
@@ -218,8 +218,8 @@
         android:layout_height="100dp"
         android:layout_width="match_parent"
         android:id="@+id/button15"
-        android:textSize="30dp"
-        android:text="체크문항 15번."/>
+        android:textSize="20sp"
+        android:text="@string/check15"/>
 
     <CheckBox
         android:layout_height="wrap_content"
@@ -232,8 +232,8 @@
         android:layout_height="100dp"
         android:layout_width="match_parent"
         android:id="@+id/button16"
-        android:textSize="30dp"
-        android:text="체크문항 16번."/>
+        android:textSize="20sp"
+        android:text="@string/check16"/>
 
     <CheckBox
         android:layout_height="wrap_content"
@@ -246,8 +246,8 @@
         android:layout_height="100dp"
         android:layout_width="match_parent"
         android:id="@+id/button17"
-        android:textSize="30dp"
-        android:text="체크문항 17번."/>
+        android:textSize="20sp"
+        android:text="@string/check17"/>
 
     <CheckBox
         android:layout_height="wrap_content"
@@ -260,8 +260,8 @@
         android:layout_height="100dp"
         android:layout_width="match_parent"
         android:id="@+id/button18"
-        android:textSize="30dp"
-        android:text="체크문항 18번."/>
+        android:textSize="20sp"
+        android:text="@string/check18"/>
 
     <CheckBox
         android:layout_height="wrap_content"
@@ -274,8 +274,8 @@
         android:layout_height="100dp"
         android:layout_width="match_parent"
         android:id="@+id/button19"
-        android:textSize="30dp"
-        android:text="체크문항 19번."/>
+        android:textSize="20sp"
+        android:text="@string/check19"/>
 
     <CheckBox
         android:layout_height="wrap_content"
@@ -288,8 +288,8 @@
         android:layout_height="100dp"
         android:layout_width="match_parent"
         android:id="@+id/button20"
-        android:textSize="30dp"
-        android:text="체크문항 20번."/>
+        android:textSize="20sp"
+        android:text="@string/check20"/>
 
     <CheckBox
         android:layout_height="wrap_content"

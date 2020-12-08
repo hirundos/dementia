@@ -13,4 +13,25 @@
     -->
     <string name="hello_world">Hello Square World!</string>
     <string name="title_activity_gugu">GuguActivity</string>
+
+    <string name="check1">어떤 일이 언제 일어났는지 기억하지 못할 때가 있다.</string>
+    <string name="check2">며칠 전에 들었던 이야기를 잊는다.</string>
+    <string name="check3">반복되는 일상 생활에 변화가 생겼을 때 금방 적응하기가 힘들다.</string>
+    <string name="check4">본인에게 중요한 사항을 잊을 때가 있다. (예를 들어 배우자 생일, 결혼 기념일 등)</string>
+    <string name="check5">어떤 일을 하고도 잊어버려 다시 반복한 적이 있다.</string>
+    <string name="check6">약속을 하고 잊은 때가 있다.</string>
+    <string name="check7">이야기 도중 방금 자기가 무슨 이야기를 하고 있었는지를 잊을 때가 있다.</string>
+    <string name="check8">약 먹는 시간을 놓치기도 한다.</string>
+    <string name="check9">하고 싶은 말이나 표현이 금방 떠오르지 않는다.</string>
+    <string name="check10">물건 이름이 금방 생각나지 않는다.</string>
+    <string name="check11">개인적인 편지나 사무적인 편지를 쓰기 힘들다.</string>
+    <string name="check12">갈수록 말수가 감소되는 경향이 있다.</string>
+    <string name="check13">신문이나 잡지를 읽을 때 이야기 줄거리를 파악하지 못한다.</string>
+    <string name="check14">책을 읽을 때 같은 문장을 여러 번 읽어야 이해가 된다.</string>
+    <string name="check15">텔레비전에 나오는 이야기를 따라 가기 힘들다.</string>
+    <string name="check16">전에 가본 장소를 기억하지 못한다.</string>
+    <string name="check17">길을 잃거나 헤맨 적이 있다.</string>
+    <string name="check18">계산 능력이 떨어졌다.</string>
+    <string name="check19">돈 관리를 하는 데 실수가 있다.</string>
+    <string name="check20">과거에 쓰던 기구 사용이 서툴러졌다.</string>
 </resources>
