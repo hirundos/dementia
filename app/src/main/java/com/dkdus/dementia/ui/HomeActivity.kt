@@ -31,10 +31,6 @@ class HomeActivity : AppCompatActivity(), BottomNavigationView.OnNavigationItemS
                 val homeFragment = HomeFragment()
                 transaction.replace(R.id.fragment, homeFragment)
             }
-            R.id.navigation_location -> {
-                val mapFragment = MapFragment()
-                transaction.replace(R.id.fragment, mapFragment)
-            }
             R.id.navigation_check -> {
                 val checkFragment = CheckFragment()
                 transaction.replace(R.id.fragment, checkFragment)
@@ -42,11 +38,6 @@ class HomeActivity : AppCompatActivity(), BottomNavigationView.OnNavigationItemS
             R.id.navigation_game ->{
                 val gameFragment = GameFragment()
                 transaction.replace(R.id.fragment, gameFragment)
-            }
-            R.id.navigation_notify ->{
-                val notificationFragment =
-                    NotificationsFragment()
-                transaction.replace(R.id.fragment,notificationFragment)
             }
         }
         transaction.addToBackStack(null)

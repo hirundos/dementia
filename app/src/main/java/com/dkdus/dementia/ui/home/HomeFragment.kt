@@ -41,6 +41,7 @@ class HomeFragment : Fragment(), OnMapReadyCallback, GoogleMap.OnMarkerClickList
     var call : NodeList? = null
     var doctorN : NodeList? = null
     var nurseN : NodeList? = null
+    var sabokN : NodeList? = null
     var data: MutableList<Item> = arrayListOf()
 
 
@@ -98,6 +99,10 @@ class HomeFragment : Fragment(), OnMapReadyCallback, GoogleMap.OnMarkerClickList
                     "//body/items/item/nurseCo",
                     it, XPathConstants.NODESET
             ) as NodeList?
+            sabokN = xpath.evaluate(
+                    "//body/items/item/scrcsCo",
+                    it, XPathConstants.NODESET
+            ) as NodeList?
 
             Log.d("수렴","receive")
 
@@ -108,26 +113,31 @@ class HomeFragment : Fragment(), OnMapReadyCallback, GoogleMap.OnMarkerClickList
                     .title(cntername!!.item(i).textContent)
                         .zIndex(i.toFloat())
             )}
+            mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(LatLng(lat!!.item(0).textContent.toDouble(), lot?.item(0)?.textContent!!.toDouble()),7f))
         })
     }
 
     override fun onMapReady(p0: GoogleMap) {
         mMap = p0
         val marker = LatLng(35.241615, 128.695587)
-        mMap.addMarker(MarkerOptions().position(marker).title("Marker LAB"))
-        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(marker,7f))
+    //    mMap.addMarker(MarkerOptions().position(marker).title("Marker LAB"))
+
         mMap.setOnMarkerClickListener(this)
     }
 
     override fun onMarkerClick(p0: Marker?): Boolean {
         var index = p0!!.zIndex.toInt()
+
         var intent: Intent = Intent(context, DetailActivity::class.java)
+        intent.putExtra("lat",lat!!.item(index).textContent)
+        intent.putExtra("lot",lot!!.item(index).textContent)
         intent.putExtra("cntername",cntername!!.item(index).textContent)
         intent.putExtra("lnmadr",lnmadr!!.item(index).textContent)
         intent.putExtra("imbcltyIntrcn",imbcltyIntrcn!!.item(index).textContent)
         intent.putExtra("call",call!!.item(index).textContent)
         intent.putExtra("doc",doctorN!!.item(index).textContent)
         intent.putExtra("nur",nurseN!!.item(index).textContent)
+        intent.putExtra("sabok",sabokN!!.item(index).textContent)
         startActivity(intent)
         return true
     }
